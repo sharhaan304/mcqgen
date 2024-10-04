@@ -31,7 +31,7 @@ def get_table_data(quiz_str):
         
         # iterate over the quiz dictionary and extract the required information
         for key,value in quiz_dict.items():
-            mcq=value["mcq"]
+            mcq=value.get["mcq",""]
             options=" || ".join(
                 [
                     f"{option}-> {option_value}" for option, option_value in value["options"].items()
@@ -39,11 +39,17 @@ def get_table_data(quiz_str):
                  ]
             )
             
-            correct=value["correct"]
+            correct=value["correct", ""]
             quiz_table_data.append({"MCQ": mcq,"Choices": options, "Correct": correct})
         
         return quiz_table_data
         
+    except json.JSONDecodeError:
+        # Return an error message instead of using st.error()
+        return "Invalid JSON format."
+    except KeyError as e:
+        # Return an error message
+        return f"Missing expected key in quiz data: {e}"
     except Exception as e:
-        traceback.print_exception(type(e), e, e.__traceback__)
-        return False
+        # Return a general error message
+        return f"An unexpected error occurred: {e}"

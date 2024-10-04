@@ -1,0 +1,303 @@
+[2024-10-04 08:42:32,797] 89 root - ERROR - Error during quiz generation/evaluation: 'RunnableSequence' object has no attribute 'run'
+[2024-10-04 08:53:31,194] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 08:53:32,839] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 08:53:32,840] 79 root - INFO - Quiz generated: 
+{
+    '1': {
+        'mcq': 'What is the main application of finite automata in compiler design?',
+        'options': {
+            'a': 'Speech and Language Recognition',
+            'b': 'Text search/pattern matching Algorithms',
+            'c': 'Lexical Analysis',
+            'd': 'Regular Languages and their descriptors'
+        },
+        'correct': 'c'
+    },
+    '2': {
+        'mcq': 'Which tool uses automata-based models for speech recognition and language translation?',
+        'options': {
+            'a': 'Video Games',
+            'b': 'Robotics, agent-based systems',
+            'c': 'Natural Language Processing (NLP)',
+            'd': 'Context-free languages and their descriptors'
+        },
+        'correct': 'c'
+    },
+    '3': {
+        'mcq': 'What is the purpose of regular expressions in various systems?',
+        'options': {
+            'a': 'Model and verify protocols and electronic circuits',
+            'b': 'Describe the syntax of programming languages',
+            'c': 'Break down text into smaller components in NLP tasks',
+            'd': 'Decide questions about regular languages'
+        },
+        'correct': 'b'
+    }
+}
+[2024-10-04 08:53:32,842] 80 root - INFO - Review generated: Complexity Analysis:
+The quiz is designed for AI students with a strong understanding of compiler design and automata theory. It requires knowledge of specific applications of finite automata and regular expressions in various systems. The language used is technical and may be challenging for beginners.
+
+Recommendation:
+To better suit student abilities, simplify the language and provide more context in the questions. For example, instead of asking for specific applications, focus on general concepts and definitions related to finite automata and regular expressions in a more accessible manner.
+[2024-10-04 08:55:52,354] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 08:55:54,168] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 08:55:54,170] 79 root - INFO - Quiz generated: 
+{
+    '1': {
+        'mcq': 'What is the first phase of a compiler where source code is converted into tokens?',
+        'options': {
+            'a': 'Syntax Analysis',
+            'b': 'Natural Language Processing',
+            'c': 'Lexical Analysis',
+            'd': 'Regular Languages'
+        },
+        'correct': 'c'
+    },
+    '2': {
+        'mcq': 'What are finite automata used for in the context of Natural Language Processing?',
+        'options': {
+            'a': 'Tokenization',
+            'b': 'Robotics',
+            'c': 'Video Games',
+            'd': 'Text search/pattern matching Algorithms'
+        },
+        'correct': 'a'
+    },
+    '3': {
+        'mcq': 'Which book is referenced for Automata Theory in the provided text?',
+        'options': {
+            'a': 'Introduction to Algorithms',
+            'b': 'Automata Theory, Languages, and Computation 3rd Edition',
+            'c': 'Computer Organization and Design',
+            'd': 'Artificial Intelligence: A Modern Approach'
+        },
+        'correct': 'b'
+    }
+}
+[2024-10-04 08:55:54,170] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "\n{\n    '1': {\n        'mcq': 'What is the first phase of a compiler where source code is converted into tokens?',\n        'options': {\n            'a': 'Syntax Analysis',\n            'b': 'Natural Language Processing',\n            'c': 'Lexical Analysis',\n            'd': 'Regular Languages'\n        },\n        'correct': 'c'\n    },\n    '2': {\n        'mcq': 'What are finite automata used for in the context of Natural Language Processing?',\n        'options': {\n            'a': 'Tokenization',\n            'b': 'Robotics',\n            'c': 'Video Games',\n            'd': 'Text search/pattern matching Algorithms'\n        },\n        'correct': 'a'\n    },\n    '3': {\n        'mcq': 'Which book is referenced for Automata Theory in the provided text?',\n        'options': {\n            'a': 'Introduction to Algorithms',\n            'b': 'Automata Theory, Languages, and Computation 3rd Edition',\n            'c': 'Computer Organization and Design',\n            'd': 'Artificial Intelligence: A Modern Approach'\n        },\n        'correct': 'b'\n    }\n}", 'text': 'The complexity of the quiz questions is suitable for AI students with a strong grasp of technical concepts. To make it more accessible, simplify the language and provide more context or examples. For example, "What is the first step of a compiler that turns code into tokens?" and "What are finite automata used for in NLP, like breaking text into smaller parts?"'}
+[2024-10-04 09:05:58,824] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:06:00,131] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:06:00,133] 79 root - INFO - Quiz generated: 
+{
+    '1': {
+        'mcq': 'What is the first phase of a compiler where the source code is converted into tokens?',
+        'options': {
+            'a': 'Syntax Analysis',
+            'b': 'Natural Language Processing',
+            'c': 'Lexical Analysis',
+            'd': 'Text search/pattern matching Algorithms'
+        },
+        'correct': 'c'
+    },
+    '2': {
+        'mcq': 'Which tool uses automata-based models to model the syntax and grammar of languages?',
+        'options': {
+            'a': 'Video Games',
+            'b': 'Compiler Design',
+            'c': 'Robotics, agent-based systems',
+            'd': 'Speech and Language Recognition'
+        },
+        'correct': 'd'
+    },
+    '3': {
+        'mcq': 'What are regular expressions commonly used for?',
+        'options': {
+            'a': 'Model and verify protocols and electronic circuits',
+            'b': 'Breaking down text into smaller components in NLP tasks',
+            'c': 'Describe the syntax of programming languages',
+            'd': 'Deciding the emptiness of regular languages'
+        },
+        'correct': 'c'
+    }
+}
+[2024-10-04 09:06:00,133] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "\n{\n    '1': {\n        'mcq': 'What is the first phase of a compiler where the source code is converted into tokens?',\n        'options': {\n            'a': 'Syntax Analysis',\n            'b': 'Natural Language Processing',\n            'c': 'Lexical Analysis',\n            'd': 'Text search/pattern matching Algorithms'\n        },\n        'correct': 'c'\n    },\n    '2': {\n        'mcq': 'Which tool uses automata-based models to model the syntax and grammar of languages?',\n        'options': {\n            'a': 'Video Games',\n            'b': 'Compiler Design',\n            'c': 'Robotics, agent-based systems',\n            'd': 'Speech and Language Recognition'\n        },\n        'correct': 'd'\n    },\n    '3': {\n        'mcq': 'What are regular expressions commonly used for?',\n        'options': {\n            'a': 'Model and verify protocols and electronic circuits',\n            'b': 'Breaking down text into smaller components in NLP tasks',\n            'c': 'Describe the syntax of programming languages',\n            'd': 'Deciding the emptiness of regular languages'\n        },\n        'correct': 'c'\n    }\n}", 'text': 'Complexity Analysis: The quiz is moderately complex, targeting students with a basic understanding of compiler design and programming concepts. The questions may require some technical knowledge but are straightforward for AI students.\n\nSuggestions for Improvement:\n1. Simplify language in questions for better comprehension.\n2. Include more context or examples to aid understanding.\n3. Offer explanations for correct answers to enhance learning.'}
+[2024-10-04 09:12:19,682] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:12:21,826] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:12:21,827] 79 root - INFO - Quiz generated: {
+    '1': {
+        'mcq': 'What is the first phase of a compiler where the source code is converted into tokens?',
+        'options': {
+            'a': 'Syntax Analysis',
+            'b': 'Regular Expressions',
+            'c': 'Lexical Analysis',
+            'd': 'Natural Language Processing'
+        },
+        'correct': 'c'
+    },
+    '2': {
+        'mcq': 'Which type of automata is used to parse the structure of programming languages?',
+        'options': {
+            'a': 'Finite Automata',
+            'b': 'Pushdown Automata',
+            'c': 'Turing Machines',
+            'd': 'Context-free Grammars'
+        },
+        'correct': 'd'
+    },
+    '3': {
+        'mcq': 'What role do regular expressions play in text search/pattern matching algorithms?',
+        'options': {
+            'a': 'They are used to describe natural languages',
+            'b': 'They model and verify protocols and electronic circuits',
+            'c': 'They are used in many systems for pattern matching',
+            'd': 'They are used in compiler design for syntax analysis'
+        },
+        'correct': 'c'
+    }
+}
+[2024-10-04 09:12:21,827] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "{\n    '1': {\n        'mcq': 'What is the first phase of a compiler where the source code is converted into tokens?',\n        'options': {\n            'a': 'Syntax Analysis',\n            'b': 'Regular Expressions',\n            'c': 'Lexical Analysis',\n            'd': 'Natural Language Processing'\n        },\n        'correct': 'c'\n    },\n    '2': {\n        'mcq': 'Which type of automata is used to parse the structure of programming languages?',\n        'options': {\n            'a': 'Finite Automata',\n            'b': 'Pushdown Automata',\n            'c': 'Turing Machines',\n            'd': 'Context-free Grammars'\n        },\n        'correct': 'd'\n    },\n    '3': {\n        'mcq': 'What role do regular expressions play in text search/pattern matching algorithms?',\n        'options': {\n            'a': 'They are used to describe natural languages',\n            'b': 'They model and verify protocols and electronic circuits',\n            'c': 'They are used in many systems for pattern matching',\n            'd': 'They are used in compiler design for syntax analysis'\n        },\n        'correct': 'c'\n    }\n}", 'text': 'Complexity Analysis:\nThe quiz is highly technical and requires a deep understanding of computer science concepts such as compilers, automata, and regular expressions. The questions are specific and may be challenging for AI students without prior knowledge in the field. \n\nRecommendation:\nTo better fit the student abilities, consider simplifying the language and providing more context in the questions. For example:\n1. "In a compiler, what is the initial phase called where the source code is converted into tokens?"\n2. "Which type of automata is used to understand the structure of programming languages?"\n3. "How are regular expressions useful in finding patterns in text?"'}
+[2024-10-04 09:14:30,676] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:14:31,704] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:14:31,709] 79 root - INFO - Quiz generated: {
+    '1': {
+        'mcq': 'What is the importance of automata in compiler design?',
+        'options': {
+            'a': 'Used in lexical analysis to convert source code into tokens',
+            'b': 'Utilized in syntax analysis to parse programming language structure',
+            'c': 'Both a and b',
+            'd': 'None of the above'
+        },
+        'correct': 'c'
+    },
+    '2': {
+        'mcq': 'Which area of study utilizes automata-based models for speech and language recognition?',
+        'options': {
+            'a': 'Video Games',
+            'b': 'Robotics',
+            'c': 'Natural Language Processing (NLP)',
+            'd': 'Text search/pattern matching Algorithms'
+        },
+        'correct': 'c'
+    },
+    '3': {
+        'mcq': 'What tool is used for breaking down text into smaller components in NLP tasks?',
+        'options': {
+            'a': 'Regular expressions',
+            'b': 'Finite automata',
+            'c': 'Tokenization',
+            'd': 'Context-free grammars'
+        },
+        'correct': 'c'
+    }
+}
+[2024-10-04 09:14:31,710] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "{\n    '1': {\n        'mcq': 'What is the importance of automata in compiler design?',\n        'options': {\n            'a': 'Used in lexical analysis to convert source code into tokens',\n            'b': 'Utilized in syntax analysis to parse programming language structure',\n            'c': 'Both a and b',\n            'd': 'None of the above'\n        },\n        'correct': 'c'\n    },\n    '2': {\n        'mcq': 'Which area of study utilizes automata-based models for speech and language recognition?',\n        'options': {\n            'a': 'Video Games',\n            'b': 'Robotics',\n            'c': 'Natural Language Processing (NLP)',\n            'd': 'Text search/pattern matching Algorithms'\n        },\n        'correct': 'c'\n    },\n    '3': {\n        'mcq': 'What tool is used for breaking down text into smaller components in NLP tasks?',\n        'options': {\n            'a': 'Regular expressions',\n            'b': 'Finite automata',\n            'c': 'Tokenization',\n            'd': 'Context-free grammars'\n        },\n        'correct': 'c'\n    }\n}", 'text': 'The complexity of the quiz is moderate, suitable for AI students with a basic understanding of compiler design and NLP. The questions focus on key concepts and applications of automata. To better fit student abilities, simplify language and provide more context in questions for easier comprehension.'}
+[2024-10-04 09:16:50,386] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:16:54,609] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:16:54,610] 79 root - INFO - Quiz generated: {
+    '1': {
+        'mcq': 'Which phase of a compiler uses finite automata for lexical analysis?',
+        'options': {
+            'a': 'Syntax Analysis',
+            'b': 'Semantic Analysis',
+            'c': 'Optimization',
+            'd': 'Lexical Analysis'
+        },
+        'correct': 'd'
+    },
+    '2': {
+        'mcq': 'What are automata-based models used for in Natural Language Processing?',
+        'options': {
+            'a': 'Image Processing',
+            'b': 'Speech and Language Recognition',
+            'c': 'Data Analysis',
+            'd': 'Database Management'
+        },
+        'correct': 'b'
+    },
+    '3': {
+        'mcq': 'Which type of languages are described using context-free grammars?',
+        'options': {
+            'a': 'Regular Languages',
+            'b': 'Context-Free Languages',
+            'c': 'Recursive Languages',
+            'd': 'Recursively Enumerable Languages'
+        },
+        'correct': 'b'
+    }
+}
+[2024-10-04 09:16:54,610] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "{\n    '1': {\n        'mcq': 'Which phase of a compiler uses finite automata for lexical analysis?',\n        'options': {\n            'a': 'Syntax Analysis',\n            'b': 'Semantic Analysis',\n            'c': 'Optimization',\n            'd': 'Lexical Analysis'\n        },\n        'correct': 'd'\n    },\n    '2': {\n        'mcq': 'What are automata-based models used for in Natural Language Processing?',\n        'options': {\n            'a': 'Image Processing',\n            'b': 'Speech and Language Recognition',\n            'c': 'Data Analysis',\n            'd': 'Database Management'\n        },\n        'correct': 'b'\n    },\n    '3': {\n        'mcq': 'Which type of languages are described using context-free grammars?',\n        'options': {\n            'a': 'Regular Languages',\n            'b': 'Context-Free Languages',\n            'c': 'Recursive Languages',\n            'd': 'Recursively Enumerable Languages'\n        },\n        'correct': 'b'\n    }\n}", 'text': "Complexity Analysis:\nThe quiz is aimed at AI students and requires a good understanding of compiler theory and natural language processing concepts. The questions are moderately complex, testing knowledge on finite automata, automata-based models, and context-free grammars. Some students may find it challenging.\n\nSuggested Changes:\n1. Simplify language in questions and options.\n2. Provide more context or examples to aid understanding.\n3. Break down complex topics into simpler concepts.\n4. Adjust tone to be more encouraging and supportive of learning. \n\nRevised Quiz_MCQs:\n{\n    '1': {\n        'mcq': 'Which phase of a compiler uses finite automata for?',\n        'options': {\n            'a': 'Syntax Analysis',\n            'b': 'Semantic Analysis',\n            'c': 'Optimization',\n            'd': 'Lexical Analysis'\n        },\n        'correct': 'd'\n    },\n    '2': {\n        'mcq': 'What are automata-based models used for in NLP?',\n        'options': {\n            'a': 'Image Processing',\n            'b': 'Speech and Language Recognition',\n            'c': 'Data Analysis',\n            'd': 'Database Management'\n        },\n        'correct': 'b'\n    },\n    '3': {\n        'mcq': 'Which type of languages are described using context-free grammars?',\n        'options': {\n            'a': 'Regular Languages',\n            'b': 'Context-Free Languages',\n            'c': 'Recursive Languages',\n            'd': 'Recursively Enumerable Languages'\n        },\n        'correct': 'b'\n    }\n}"}
+[2024-10-04 09:23:18,008] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:23:21,019] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:23:21,021] 79 root - INFO - Quiz generated: 
+{
+'1': {'mcq': 'What is the first phase of a compiler where finite automata are used to convert source code into tokens?', 'options': {'a': 'Syntax Analysis', 'b': 'Natural Language Processing', 'c': 'Lexical Analysis', 'd': 'Text search'}, 'correct': 'c'}, 
+'2': {'mcq': 'Which type of automata are used in NLP tasks such as machine translation and sentiment analysis to break down text into smaller components (tokens)?', 'options': {'a': 'Finite automata', 'b': 'Pushdown automata', 'c': 'Regular expressions', 'd': 'Context-free grammars'}, 'correct': 'a'}, 
+'3': {'mcq': 'What do context-free grammars describe when it comes to programming languages and natural languages?', 'options': {'a': 'Regular expressions', 'b': 'Syntax', 'c': 'Recursively enumerable languages', 'd': 'Intractable things'}, 'correct': 'b'}
+}
+[2024-10-04 09:23:21,021] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "\n{\n'1': {'mcq': 'What is the first phase of a compiler where finite automata are used to convert source code into tokens?', 'options': {'a': 'Syntax Analysis', 'b': 'Natural Language Processing', 'c': 'Lexical Analysis', 'd': 'Text search'}, 'correct': 'c'}, \n'2': {'mcq': 'Which type of automata are used in NLP tasks such as machine translation and sentiment analysis to break down text into smaller components (tokens)?', 'options': {'a': 'Finite automata', 'b': 'Pushdown automata', 'c': 'Regular expressions', 'd': 'Context-free grammars'}, 'correct': 'a'}, \n'3': {'mcq': 'What do context-free grammars describe when it comes to programming languages and natural languages?', 'options': {'a': 'Regular expressions', 'b': 'Syntax', 'c': 'Recursively enumerable languages', 'd': 'Intractable things'}, 'correct': 'b'}\n}", 'text': 'Complexity Analysis: The quiz is of high complexity level as it requires knowledge of technical terms related to compilers, automata, and programming languages. The questions are tailored for advanced AI students and may be challenging for beginners.\n\nSuggested Changes:\n1. Simplify the language and tone of the questions.\n2. Use more familiar examples or scenarios to make the concepts more relatable.\n3. Provide hints or explanations for each answer choice to aid in understanding.\n4. Consider adding multiple-choice questions that test basic concepts before moving on to more advanced topics.'}
+[2024-10-04 09:24:10,883] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:24:12,830] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:24:12,832] 79 root - INFO - Quiz generated: 
+{
+    '1': {
+        'mcq': 'What is the first phase of a compiler where source code is converted into tokens?',
+        'options': {
+            'a': 'Syntax Analysis',
+            'b': 'Semantic Analysis',
+            'c': 'Lexical Analysis',
+            'd': 'Parsing'
+        },
+        'correct': 'c'
+    },
+    '2': {
+        'mcq': 'Which area of AI uses automata-based models for tasks like machine translation and sentiment analysis?',
+        'options': {
+            'a': 'Computer Vision',
+            'b': 'Natural Language Processing',
+            'c': 'Robotics',
+            'd': 'Speech Recognition'
+        },
+        'correct': 'b'
+    },
+    '3': {
+        'mcq': 'What are regular expressions commonly used for in systems like UNIX and XML descriptions?',
+        'options': {
+            'a': 'Text search/pattern matching',
+            'b': 'Speech and Language Recognition',
+            'c': 'Video Games development',
+            'd': 'Compiler Design'
+        },
+        'correct': 'a'
+    }
+}
+[2024-10-04 09:24:12,832] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "\n{\n    '1': {\n        'mcq': 'What is the first phase of a compiler where source code is converted into tokens?',\n        'options': {\n            'a': 'Syntax Analysis',\n            'b': 'Semantic Analysis',\n            'c': 'Lexical Analysis',\n            'd': 'Parsing'\n        },\n        'correct': 'c'\n    },\n    '2': {\n        'mcq': 'Which area of AI uses automata-based models for tasks like machine translation and sentiment analysis?',\n        'options': {\n            'a': 'Computer Vision',\n            'b': 'Natural Language Processing',\n            'c': 'Robotics',\n            'd': 'Speech Recognition'\n        },\n        'correct': 'b'\n    },\n    '3': {\n        'mcq': 'What are regular expressions commonly used for in systems like UNIX and XML descriptions?',\n        'options': {\n            'a': 'Text search/pattern matching',\n            'b': 'Speech and Language Recognition',\n            'c': 'Video Games development',\n            'd': 'Compiler Design'\n        },\n        'correct': 'a'\n    }\n}", 'text': 'Complexity Analysis:\nThe quiz questions are suitable for AI students with a basic understanding of compiler phases, AI areas, and regular expressions. The language used is clear and straightforward, making it accessible to students at the beginner to intermediate level.\n\nChanges Needed:\n1. Consider adding more context or explanation to the questions to provide a deeper understanding.\n2. Use simpler language and examples to further enhance student comprehension.\n3. Include more practical examples or scenarios to relate the concepts to real-world applications.'}
+[2024-10-04 09:26:22,038] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:26:24,544] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:26:24,548] 79 root - INFO - Quiz generated: {'1': {'mcq': 'What is the first phase of a compiler where the source code is converted into tokens?', 'options': {'a': 'Syntax Analysis', 'b': 'Regular Expressions', 'c': 'Lexical Analysis', 'd': 'Tokenization'}, 'correct': 'c'}, '2': {'mcq': 'Which type of automata is used in parsing the structure of programming languages?', 'options': {'a': 'Finite Automata', 'b': 'Pushdown Automata', 'c': 'Deterministic Finite Automata', 'd': 'Non-deterministic Finite Automata'}, 'correct': 'b'}, '3': {'mcq': 'What are regular expressions commonly used for in systems?', 'options': {'a': 'Pattern Matching', 'b': 'Speech Recognition', 'c': 'Text Search', 'd': 'Video Games'}, 'correct': 'a'}}
+[2024-10-04 09:26:24,548] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "{'1': {'mcq': 'What is the first phase of a compiler where the source code is converted into tokens?', 'options': {'a': 'Syntax Analysis', 'b': 'Regular Expressions', 'c': 'Lexical Analysis', 'd': 'Tokenization'}, 'correct': 'c'}, '2': {'mcq': 'Which type of automata is used in parsing the structure of programming languages?', 'options': {'a': 'Finite Automata', 'b': 'Pushdown Automata', 'c': 'Deterministic Finite Automata', 'd': 'Non-deterministic Finite Automata'}, 'correct': 'b'}, '3': {'mcq': 'What are regular expressions commonly used for in systems?', 'options': {'a': 'Pattern Matching', 'b': 'Speech Recognition', 'c': 'Text Search', 'd': 'Video Games'}, 'correct': 'a'}}", 'text': 'Complexity Analysis: The quiz questions are highly technical and specific to the field of compiler design and automata theory. The vocabulary used may be unfamiliar to some students, making it difficult for them to comprehend the questions. The concepts being tested require a deep understanding of the subject matter.\n\nUpdated Quiz Questions:\n1. What is the first step in a compiler where the source code is broken down into smaller parts?\na) Syntax Analysis\nb) Regular Expressions\nc) Lexical Analysis\nd) Tokenization\n\n2. Which type of automata is used for understanding the structure of programming languages?\na) Finite Automata\nb) Pushdown Automata\nc) Deterministic Finite Automata\nd) Non-deterministic Finite Automata\n\n3. What are regular expressions commonly used for in computer systems?\na) Pattern Matching\nb) Speech Recognition\nc) Text Search\nd) Video Games\n\nBy simplifying the language and providing more context, the updated questions are more accessible to a wider range of students while still testing their knowledge effectively.'}
+[2024-10-04 09:27:28,841] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:27:30,018] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:27:30,020] 79 root - INFO - Quiz generated: 
+{
+    '1': {
+        'mcq': 'What is the first phase of a compiler where the source code is converted into tokens?',
+        'options': {
+            'a': 'Syntax Analysis',
+            'b': 'Regular Languages',
+            'c': 'Lexical Analysis',
+            'd': 'Context-free Languages'
+        },
+        'correct': 'c'
+    },
+    '2': {
+        'mcq': 'Which type of automata are used to parse the structure of programming languages?',
+        'options': {
+            'a': 'Finite Automata',
+            'b': 'Pushdown Automata',
+            'c': 'Turing Machines',
+            'd': 'Recursive Languages'
+        },
+        'correct': 'b'
+    },
+    '3': {
+        'mcq': 'What are used in NLP tasks such as machine translation and sentiment analysis?',
+        'options': {
+            'a': 'Finite Automata',
+            'b': 'Regular Expressions',
+            'c': 'Context-free Grammars',
+            'd': 'Pushdown Automata'
+        },
+        'correct': 'a'
+    }
+}
+[2024-10-04 09:27:30,020] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "\n{\n    '1': {\n        'mcq': 'What is the first phase of a compiler where the source code is converted into tokens?',\n        'options': {\n            'a': 'Syntax Analysis',\n            'b': 'Regular Languages',\n            'c': 'Lexical Analysis',\n            'd': 'Context-free Languages'\n        },\n        'correct': 'c'\n    },\n    '2': {\n        'mcq': 'Which type of automata are used to parse the structure of programming languages?',\n        'options': {\n            'a': 'Finite Automata',\n            'b': 'Pushdown Automata',\n            'c': 'Turing Machines',\n            'd': 'Recursive Languages'\n        },\n        'correct': 'b'\n    },\n    '3': {\n        'mcq': 'What are used in NLP tasks such as machine translation and sentiment analysis?',\n        'options': {\n            'a': 'Finite Automata',\n            'b': 'Regular Expressions',\n            'c': 'Context-free Grammars',\n            'd': 'Pushdown Automata'\n        },\n        'correct': 'a'\n    }\n}", 'text': 'The quiz is moderately complex, suitable for advanced AI students. To better fit student abilities, simplify language and provide more context in questions. Revised questions may include: "What is the first step in compiling source code?" and "Which automata type is used for parsing programming languages\' structure?"'}

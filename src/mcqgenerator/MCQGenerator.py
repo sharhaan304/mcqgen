@@ -7,9 +7,9 @@ from src.mcqgenerator.utils import read_file, get_table_data
 from src.mcqgenerator.logger import logging
 
 # Import necessary packages from langchain
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain  # Use LLMChain for chaining prompts
+from langchain.chains import LLMChain, SequentialChain  # Use LLMChain for chaining prompts
 
 # Load environment variables
 load_dotenv()
@@ -32,7 +32,7 @@ Ensure to make {number} MCQs.
 
 # Create the quiz generation prompt
 quiz_generation_prompt = PromptTemplate(
-    input_variables=["text", "number", "subject", "tone", "response_json"],  # Fixed `input_variables`
+    input_variables=["text", "number", "subject", "tone", "response_json"],  # Fixed input_variables
     template=quiz_generation_template
 )
 
@@ -49,7 +49,7 @@ Check from an expert English writer of the above quiz:
 
 # Create the quiz evaluation prompt
 quiz_evaluation_prompt = PromptTemplate(
-    input_variables=["subject", "quiz"],  # Correct `input_variables`
+    input_variables=["subject", "quiz"],  # Correct input_variables
     template=quiz_evaluation_template
 )
 
@@ -70,7 +70,7 @@ def generate_evaluate_chain(text, number, subject, tone, response_json):
         })
 
         # Then, evaluate the generated quiz
-        review_result = review_chain.run({
+        review_result = review_chain.invoke({
             "subject": subject,
             "quiz": quiz_result
         })
