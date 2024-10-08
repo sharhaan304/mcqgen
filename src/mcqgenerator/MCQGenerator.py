@@ -61,7 +61,7 @@ review_chain = LLMChain(llm=llm, prompt=quiz_evaluation_prompt)
 def generate_evaluate_chain(text, number, subject, tone, response_json):
     try:
         # First, generate the quiz
-        quiz_result = quiz_chain.run({
+        quiz_result = quiz_chain.invoke({
             "text": text,
             "number": number,
             "subject": subject,
@@ -82,7 +82,7 @@ def generate_evaluate_chain(text, number, subject, tone, response_json):
         # Return both results
         return {
             "quiz": quiz_result,
-            "review": review_result
+            "review": review_result,
         }
 
     except Exception as e:

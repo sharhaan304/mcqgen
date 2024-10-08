@@ -301,3 +301,38 @@ To better suit student abilities, simplify the language and provide more context
     }
 }
 [2024-10-04 09:27:30,020] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "\n{\n    '1': {\n        'mcq': 'What is the first phase of a compiler where the source code is converted into tokens?',\n        'options': {\n            'a': 'Syntax Analysis',\n            'b': 'Regular Languages',\n            'c': 'Lexical Analysis',\n            'd': 'Context-free Languages'\n        },\n        'correct': 'c'\n    },\n    '2': {\n        'mcq': 'Which type of automata are used to parse the structure of programming languages?',\n        'options': {\n            'a': 'Finite Automata',\n            'b': 'Pushdown Automata',\n            'c': 'Turing Machines',\n            'd': 'Recursive Languages'\n        },\n        'correct': 'b'\n    },\n    '3': {\n        'mcq': 'What are used in NLP tasks such as machine translation and sentiment analysis?',\n        'options': {\n            'a': 'Finite Automata',\n            'b': 'Regular Expressions',\n            'c': 'Context-free Grammars',\n            'd': 'Pushdown Automata'\n        },\n        'correct': 'a'\n    }\n}", 'text': 'The quiz is moderately complex, suitable for advanced AI students. To better fit student abilities, simplify language and provide more context in questions. Revised questions may include: "What is the first step in compiling source code?" and "Which automata type is used for parsing programming languages\' structure?"'}
+[2024-10-04 09:28:10,422] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:28:12,019] 1038 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-04 09:28:12,022] 79 root - INFO - Quiz generated: {
+    '1': {
+        'mcq': 'What is the first phase of a compiler where source code is converted into tokens?',
+        'options': {
+            'a': 'Syntax Analysis',
+            'b': 'Natural Language Processing',
+            'c': 'Lexical Analysis',
+            'd': 'Text search/pattern matching Algorithms'
+        },
+        'correct': 'c'
+    },
+    '2': {
+        'mcq': 'Which of the following is NOT an application of automata theory?',
+        'options': {
+            'a': 'Robotics',
+            'b': 'Video Games',
+            'c': 'Database Management',
+            'd': 'Text search/pattern matching Algorithms'
+        },
+        'correct': 'c'
+    },
+    '3': {
+        'mcq': 'What is used to describe the syntax of essentially every programming language?',
+        'options': {
+            'a': 'Regular Languages',
+            'b': 'Context-free grammars',
+            'c': 'Recursive languages',
+            'd': 'Turing machines'
+        },
+        'correct': 'b'
+    }
+}
+[2024-10-04 09:28:12,022] 80 root - INFO - Review generated: {'subject': 'AI', 'quiz': "{\n    '1': {\n        'mcq': 'What is the first phase of a compiler where source code is converted into tokens?',\n        'options': {\n            'a': 'Syntax Analysis',\n            'b': 'Natural Language Processing',\n            'c': 'Lexical Analysis',\n            'd': 'Text search/pattern matching Algorithms'\n        },\n        'correct': 'c'\n    },\n    '2': {\n        'mcq': 'Which of the following is NOT an application of automata theory?',\n        'options': {\n            'a': 'Robotics',\n            'b': 'Video Games',\n            'c': 'Database Management',\n            'd': 'Text search/pattern matching Algorithms'\n        },\n        'correct': 'c'\n    },\n    '3': {\n        'mcq': 'What is used to describe the syntax of essentially every programming language?',\n        'options': {\n            'a': 'Regular Languages',\n            'b': 'Context-free grammars',\n            'c': 'Recursive languages',\n            'd': 'Turing machines'\n        },\n        'correct': 'b'\n    }\n}", 'text': 'Complexity Analysis:\nThe quiz questions are moderately complex for AI students. They require a good understanding of computer science concepts related to compilers and automata theory. Some students may find the terminology challenging.\n\nSuggestions for Improvement:\n1. Simplify language and terminology in questions.\n2. Provide more context or examples to assist understanding.\n3. Include hints or explanations for incorrect answers.'}

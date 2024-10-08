@@ -19,7 +19,8 @@ from langchain.chains import SequentialChain  # Updated import for chaining prom
 
 # Load the response JSON from the file
 with open('C:/Users/Asus/mcqgen/Response.json', 'r') as file:
-    RESPONSE_JSON = json.load(file)
+    file_contents = json.load(file)
+    RESPONSE_JSON = json.dumps(file_contents)
     
 st.title("MCQ creator Application with Langchain")
 

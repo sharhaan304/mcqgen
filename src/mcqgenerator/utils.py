@@ -23,24 +23,26 @@ def read_file(file):
             "unsupported file format only pdf and text file suppoted"
             )
 
-def get_table_data(quiz_str):
+def get_table_data(quiz_data):
     try:
-        # convert the quiz from a str to dict
-        quiz_dict=json.loads(quiz_str)
-        quiz_table_data=[]
+        # Check if input is a string and convert to dictionary if needed
+        if isinstance(quiz_data, str):
+            quiz_data = json.loads(quiz_data)
         
-        # iterate over the quiz dictionary and extract the required information
-        for key,value in quiz_dict.items():
-            mcq=value.get["mcq",""]
-            options=" || ".join(
-                [
-                    f"{option}-> {option_value}" for option, option_value in value["options"].items()
-                 
-                 ]
-            )
-            
-            correct=value["correct", ""]
-            quiz_table_data.append({"MCQ": mcq,"Choices": options, "Correct": correct})
+        quiz_table_data = []
+        
+        # Iterate over the quiz dictionary and extract the required information
+        for key, value in quiz_data.items():
+            if isinstance(value, dict) and "mcq" in value:  # Process only valid MCQs
+                mcq = value.get("mcq", "")
+                options = " || ".join(
+                    [f"{option} -> {option_value}" for option, option_value in value.get("options", {}).items()]
+                )
+                correct = value.get("correct", "")
+                
+                quiz_table_data.append({"MCQ": mcq, "Choices": options, "Correct": correct})
+            else:
+                print(f"Skipping invalid entry for key {key}: value is not a dictionary or missing 'mcq'.")
         
         return quiz_table_data
         
